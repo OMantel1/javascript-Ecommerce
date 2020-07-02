@@ -5,7 +5,7 @@ const id = urlParams.get('id');
 
 //requete de l'api
 const fetchPromise =
-    fetch("https://oriteddies-api.herokuapp.com/api/teddies" + id);
+    fetch("https://oriteddies-api.herokuapp.com/api/teddies/" + id);
 
 fetchPromise
     .then(response => {
