@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/********* header *********/
+.header {
+  background-color: white;
+  color: #2C3A47;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+  box-shadow: 0px 0px 1px #2C3A47; }
+  .header__title {
+    display: flex;
+    align-items: center; }
+    .header__title > a {
+      text-decoration: none;
+      color: #2C3A47; }
+  .header .image {
+    width: 48px;
+    padding: 8px; }
+  .header img {
+    width: 100%;
+    color: #2C3A47; }
+  .header .text {
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 8px; }
+
+.shopping .fas {
+  color: #2C3A47;
+  font-size: 26px;
+  position: relative; }
+.shopping #display {
+  position: absolute;
+  top: 24px;
+  right: 5px;
+  width: 30px;
+  text-align: center; }
+.shopping .displayNumber {
+  font-size: 12px;
+  font-weight: bolder;
+  color: white; }
+
+/********* Produc box *********/
+.product__list {
+  width: 250px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  margin: 8px;
+  background: white; }
+  .product__list > a {
+    text-decoration: none; }
+  .product__list:hover {
+    box-shadow: 0px 0px 2px black; }
+.product__single {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  margin: 8px;
+  padding: 16px;
+  background: white; }
+.product__image-small {
+  margin: auto;
+  padding: 16px; }
+  .product__image-small > img {
+    width: 100%;
+    height: 150px; }
+.product__image-big {
+  min-width: 210px;
+  max-width: 60%;
+  margin: auto;
+  padding: 8px; }
+  .product__image-big > img {
+    width: 100%;
+    height: auto; }
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/********* mise en page descriptions produits "infos" *********/
+.product__infos {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 16px;
+  color: #2C3A47; }
+.product__infos-details {
+  padding: 8px;
+  color: #2C3A47; }
+  @media screen and (max-width: 425px) {
+    .product__infos-details {
+      text-align: center; } }
+
+/********* mise en page couleurs et quantités *********/
+.optionsBox {
+  display: flex;
+  justify-content: space-between;
+  width: 150px; }
+  @media screen and (max-width: 425px) {
+    .optionsBox {
+      margin: auto;
+      justify-content: center; } }
+
+.productName {
+  color: #2C3A47;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  font-weight: 900; }
+
+.productPrice,
+.productDescription,
+.productQuantity,
+.productOptions {
+  font-weight: lighter;
+  font-size: 14px;
+  opacity: 0.7; }
+
+/*********** Panier résumé***********/
+.resume {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  margin: 8px;
+  padding: 16px;
+  font-weight: lighter;
+  font-size: 14px;
+  opacity: 0.7;
+  background: white;
+  display: flex; }
+  .resume p {
+    margin: auto; }
+  .resume .fas {
+    padding-left: 16px; }
+    .resume .fas:hover {
+      color: red;
+      cursor: pointer; }
+
+.resumeList {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between; }
+  .resumeList .list-name {
+    width: 33%;
+    text-align: start; }
+    .resumeList .list-name a {
+      font-size: 13px;
+      color: black; }
+      .resumeList .list-name a:hover {
+        text-decoration: underline; }
+  .resumeList .list-info {
+    width: 33%;
+    font-size: 13px;
+    text-align: center;
+    color: #2C3A47; }
+  .resumeList .list-price {
+    font-size: 13px;
+    width: 33%;
+    text-align: end;
+    color: #2C3A47; }
+
+#totalResume {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  font-weight: lighter;
+  font-size: 14px;
+  opacity: 0.7; }
+  #totalResume p:first-child {
+    text-decoration: underline; }
+    #totalResume p:first-child:hover {
+      color: red;
+      cursor: pointer; }
+
+.displayNone {
+  display: none; }
+
+/********* Formulaire *********/
+.form {
+  width: 50%;
+  margin: auto;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  font-weight: lighter;
+  font-size: 14px;
+  opacity: 0.7; }
+  .form div {
+    width: 90%;
+    margin: auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: column; }
+    .form div input,
+    .form div textarea {
+      width: 100%;
+      background-color: white;
+      border-radius: 4px; }
+  .form > input {
+    width: 40%;
+    margin: auto; }
+
+.displayValidation::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  color: green; }
+
+.displayNoValidation::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  color: red; }
+
+/******** validation commande *******/
+#validate {
+  font-weight: lighter;
+  font-size: 14px;
+  opacity: 0.7;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  width: 70%;
+  margin: auto;
+  padding: 16px; }
+
+/********* footer *********/
+.footer {
+  background-color: white;
+  color: #2C3A47;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 1px #2C3A47; }
+  @media screen and (max-width: 424px) {
+    .footer {
+      flex-direction: column; } }
+
+.fab {
+  color: #2C3A47;
+  font-size: 24px;
+  margin: 0px 0px 0px 24px; }
+  @media screen and (max-width: 424px) {
+    .fab {
+      margin: 10px; } }
+
+/********* General *********/
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: auto;
+  font-family: nunito, sans-serif;
+  background-color: rgba(202, 211, 200, 0.144); }
+
+/********* container *********/
+.container {
+  flex: 1;
+  height: 100%; }
+  .container__title {
+    color: #2C3A47;
+    opacity: 0.9;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 16px; }
+
+/********* wrapper large and medium *********/
+.wrapper-large {
+  width: 70%;
+  margin: auto; }
+  @media screen and (max-width: 850px) {
+    .wrapper-large {
+      width: 98%; } }
+.wrapper-medium {
+  width: 50%;
+  margin: auto; }
+  @media screen and (max-width: 1024px) {
+    .wrapper-medium {
+      width: 90%; } }
+  .wrapper-medium p,
+  .wrapper-medium a {
+    font-weight: lighter;
+    font-size: 14px;
+    opacity: 0.7;
+    text-decoration: none; }
+  .wrapper-medium a {
+    color: #2C3A47; }
+    .wrapper-medium a:hover {
+      color: black; }
+  .wrapper-medium .button {
+    width: 150px;
+    padding: 10px;
+    background-color: #fdfafa;
+    color: #2C3A47; }
+  .wrapper-medium > div {
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

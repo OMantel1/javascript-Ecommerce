@@ -1,0 +1,106 @@
+/********* Produc box *********/
+.product {
+
+    &__list {
+        width: 250px;
+        @include boxShadow;
+        margin: 8px;
+        background: $second-color;
+
+        >a{
+            text-decoration: none;
+        }
+        &:hover{
+            box-shadow: 0px 0px 2px black;
+
+        }
+
+    }
+
+    &__single {
+        @include boxShadow;
+        margin: 8px;
+        padding: 16px;
+        background: $second-color;
+
+
+    }
+
+    &__image-small {
+        margin: auto;
+        padding: 16px;
+
+        >img {
+            width: 100%;
+            height: 150px;
+        }
+
+    }
+
+    &__image-big {
+        min-width: 210px;
+        max-width: 60%;
+        margin: auto;
+        padding: 8px;
+
+        >img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/********* mise en page descriptions produits "infos" *********/
+.product {
+    &__infos {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        padding: 16px;
+        color: $main-color;
+    }
+
+    &__infos-details {
+        padding: 8px;
+        color: $main-color;
+        @media screen and (max-width: 425px) {
+            text-align: center;
+        }
+    }
+}
+
+/********* mise en page couleurs et quantités *********/
+.optionsBox {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    @media screen and (max-width: 425px) {
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+.productName {
+    color: $main-color;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    font-weight: 900;
+
+}
+
+.productPrice,
+.productDescription,
+.productQuantity,
+.productOptions {
+    @include textLight;
+
+}

@@ -1,0 +1,84 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "product.scss";
+@import "page-panier.scss";
+@import "form.scss";
+@import "page-validation.scss";
+@import "footer.scss";
+
+/********* General *********/
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: auto;
+    font-family: nunito, sans-serif;
+    background-color: $third-color;
+}
+
+/********* container *********/
+.container {
+    flex: 1;
+    height: 100%;
+
+    &__title {
+        color: $main-color;
+        opacity: 0.9;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 16px;
+    }
+}
+
+/********* wrapper large and medium *********/
+
+.wrapper {
+    &-large {
+        width: 70%;
+        margin: auto;
+        @media screen and (max-width: 850px) {
+            width: 98%;
+        }
+    }
+
+    &-medium {
+        width: 50%;
+        margin: auto;
+
+        @media screen and (max-width: 1024px) {
+            width: 90%;
+        }
+
+        p,
+        a {
+            @include textLight;
+            text-decoration: none;
+        }
+
+        a {
+            color: $main-color;
+
+            &:hover {
+                color: darken($main-color, 70%);
+            }
+        }
+
+        .button {
+            width: 150px;
+            padding: 10px;
+            background-color: $background;
+            color: $main-color;
+        }
+
+        >div {
+            text-align: center;
+        }
+    }
+
+}

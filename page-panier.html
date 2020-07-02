@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="icon" href="img/bear-face.png" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="page-panier.js"></script>
+    <script src="basketIconDisplay.js"></script>
+
+    <title>ORITEDDIES | Panier</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__title">
+            <div class="image">
+                <img src="img/bear-face.png" alt="">
+            </div>
+            <a href="index.html">
+                <h1 class="text">Oriteddies</h1>
+            </a>
+        </div>
+
+        <div class="shopping">
+
+            <a><i class="fas fa-shopping-cart"></i></a>
+            <div id="display">
+                <!-- <span class="displayNumber">8</span> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main container -->
+    <main class="container">
+        <h2 class="container__title">Votre Panier</h2>
+
+        <!-- section container product -->
+        <div class="wrapper-medium">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Continuer mes achats</a>
+
+            <!-- section product -->
+            <section id="basketList">
+                <!-- <div class="resume">
+                    <ul class="resumeList">
+                        <li class="list-name"><a href="page-produit.html?id=${element.id}">${element.name}</a></li>
+                        <li class="list-info">quantité: ${element.quantity}</li>
+                        <li class="list-price"><span>${totalProductPrice / 100}</span>€</li>
+                    </ul>
+                    <i class="fas fa-trash" id="${element.id}"></i>
+                </div> -->
+            </section>
+
+            <div id="totalResume">
+                <p id="effacer"> supprimer mon panier</p>
+                <p>Prix Total: <span id="totalPrice">0</span> € </p>
+            </div>
+
+        </div>
+
+        <!-- FORMULAIRE : prenom, nom, adresse, ville, mail -->
+        <form class="form">
+            <div>
+                <label for="lastName" class="">Nom: </label>
+                <input type="text" id="lastName" class="" required minlength="3" pattern="[A-Za-z' -]+">
+            </div>
+            <div>
+                <label for="firstName" class="">Prenom: </label>
+                <input type="text" id="firstName" required minlength="3" pattern="[A-Za-z' -]+">
+            </div>
+            <div>
+                <label for="address" class="">Adresse: </label>
+                <input type="text" id="address" required minlength="4">
+            </div>
+            <div>
+                <label for="city" class="">Ville: </label>
+                <input type="text" id="city" required minlength="3" pattern="[A-Za-z' -]+">
+            </div>
+            <div>
+                <label for="email" class="">Mail: </label>
+                <input type="text" id="email" placeholder="mon@mail.com" required>
+            </div>
+            <input type="submit" value="Envoyer" disabled id="submit" class="displayNone">
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer_text">
+            <p> <strong>Oriteddies</strong>
+                by Orinoco</p>
+        </div>
+
+        <!-- footer social icons -->
+        <section class="footer__social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

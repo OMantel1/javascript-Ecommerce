@@ -1,0 +1,84 @@
+/*********** Panier résumé***********/
+
+.resume {
+    @include boxShadow;
+    margin: 8px;
+    padding: 16px;
+    @include textLight;
+    background: $second-color;
+    display: flex;
+
+    p {
+        margin: auto;
+    }
+
+    .fas {
+        padding-left: 16px;
+
+        &:hover {
+            color: red;
+            cursor: pointer;
+        }
+    }
+}
+
+.resumeList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+
+
+    .list-name {
+        width: 33%;
+        text-align: start;
+
+
+        a {
+            font-size: 13px;
+            color: black;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .list-info {
+        width: 33%;
+        font-size: 13px;
+        text-align: center;
+        color: $main-color;
+    }
+
+    .list-price {
+        font-size: 13px;
+        width: 33%;
+        text-align: end;
+        color: $main-color;
+    }
+
+}
+
+#totalResume {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    @include textLight;
+
+    p:first-child {
+        text-decoration: underline;
+
+        &:hover {
+            color: red;
+            cursor: pointer;
+        }
+    }
+}
+
+.displayNone{
+    display: none;
+}

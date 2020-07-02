@@ -1,0 +1,61 @@
+/********* header *********/
+.header {
+    background-color: $second-color;
+    color: $main-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    box-shadow: 0px 0px 1px $main-color;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        >a{
+            text-decoration: none;
+            color: $main-color;
+        }
+
+    }
+
+    .image {
+        width: 48px;
+        padding: 8px;
+    }
+
+    img {
+        width: 100%;
+        color: $main-color;
+    }
+
+    .text {
+        font-size: 22px;
+        letter-spacing: 4px;
+        margin: 0;
+        padding: 8px;
+    }
+
+}
+
+.shopping {
+    .fas {
+        color: $main-color;
+        font-size: 26px;
+        // margin: 0px 0px 0px 24px;
+        position: relative;
+    }
+
+    #display {
+        position: absolute;
+        top: 24px;
+        right: 5px;
+        width: 30px;
+        text-align: center;
+    }
+
+    .displayNumber {
+        font-size: 12px;
+        font-weight: bolder;
+        color: white;
+    }
+}
