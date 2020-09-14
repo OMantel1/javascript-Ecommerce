@@ -1,0 +1,19 @@
+{
+  "name": "front-oriteddies",
+  "version": "1.0.0",
+  "description": "- School project -",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OMantel1/front-oriteddies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OMantel1/front-oriteddies/issues"
+  },
+  "homepage": "https://github.com/OMantel1/front-oriteddies#readme"
+}
