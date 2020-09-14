@@ -306,7 +306,12 @@ body {
     width: 150px;
     padding: 10px;
     background-color: #fdfafa;
-    color: #2C3A47; }
+    color: #2C3A47;
+    border: solid #6a87a2 1px; }
+    .wrapper-medium .button:hover {
+      color: #fdfafa;
+      background-color: #2C3A47;
+      border: solid #6a87a2 1px; }
   .wrapper-medium > div {
     text-align: center; }
 

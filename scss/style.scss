@@ -74,6 +74,12 @@ body {
             padding: 10px;
             background-color: $background;
             color: $main-color;
+            border: solid lighten($main-color, 30%) 1px;
+            &:hover {
+                color: $background;
+                background-color: $main-color;
+                border: solid lighten($main-color, 30%) 1px;
+            }
         }
 
         >div {
