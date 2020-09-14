@@ -96,6 +96,8 @@
 .optionsBox {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   width: 150px; }
   @media screen and (max-width: 425px) {
     .optionsBox {
@@ -115,6 +117,12 @@
   font-weight: lighter;
   font-size: 14px;
   opacity: 0.7; }
+
+.addSubButtons button {
+  width: 24px; }
+
+.addSubButtons, .productPrice, .productOptions {
+  margin: 4px 0; }
 
 /*********** Panier résumé***********/
 .resume {

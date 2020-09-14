@@ -82,6 +82,8 @@
 .optionsBox {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
     width: 150px;
     @media screen and (max-width: 425px) {
         margin: auto;
@@ -103,4 +105,13 @@
 .productOptions {
     @include textLight;
 
+}
+
+
+.addSubButtons button {
+    width: 24px;
+}
+
+.addSubButtons, .productPrice, .productOptions {
+    margin: 4px 0;
 }
