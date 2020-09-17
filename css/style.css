@@ -15,13 +15,13 @@
       text-decoration: none;
       color: #2C3A47; }
   .header .image {
-    width: 48px;
+    width: 32px;
     padding: 8px; }
   .header img {
     width: 100%;
     color: #2C3A47; }
   .header .text {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 4px;
     margin: 0;
     padding: 8px; }
@@ -32,7 +32,7 @@
   position: relative; }
 .shopping #display {
   position: absolute;
-  top: 24px;
+  top: 16px;
   right: 5px;
   width: 30px;
   text-align: center; }
@@ -258,7 +258,6 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 1440px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

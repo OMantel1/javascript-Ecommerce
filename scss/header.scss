@@ -19,7 +19,7 @@
     }
 
     .image {
-        width: 48px;
+        width: 32px;
         padding: 8px;
     }
 
@@ -29,7 +29,7 @@
     }
 
     .text {
-        font-size: 22px;
+        font-size: 18px;
         letter-spacing: 4px;
         margin: 0;
         padding: 8px;
@@ -47,13 +47,13 @@
 
     #display {
         position: absolute;
-        top: 24px;
+        top: 16px;
         right: 5px;
         width: 30px;
         text-align: center;
     }
 
-    .displayNumber {
+    .displayNumber {  
         font-size: 12px;
         font-weight: bolder;
         color: white;
