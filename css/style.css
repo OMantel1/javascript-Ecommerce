@@ -115,8 +115,7 @@
 .productQuantity,
 .productOptions {
   font-weight: lighter;
-  font-size: 14px;
-  opacity: 0.7; }
+  font-size: 14px; }
 
 .addSubButtons button {
   width: 24px; }
@@ -131,7 +130,6 @@
   padding: 16px;
   font-weight: lighter;
   font-size: 14px;
-  opacity: 0.7;
   background: white;
   display: flex; }
   .resume p {
@@ -173,8 +171,7 @@
   justify-content: space-between;
   padding: 0px 10px;
   font-weight: lighter;
-  font-size: 14px;
-  opacity: 0.7; }
+  font-size: 14px; }
   #totalResume p:first-child {
     text-decoration: underline; }
     #totalResume p:first-child:hover {
@@ -193,8 +190,7 @@
   flex-direction: column;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   font-weight: lighter;
-  font-size: 14px;
-  opacity: 0.7; }
+  font-size: 14px; }
   .form div {
     width: 90%;
     margin: auto;
@@ -226,7 +222,6 @@
 #validate {
   font-weight: lighter;
   font-size: 14px;
-  opacity: 0.7;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   width: 70%;
   margin: auto;
@@ -295,7 +290,6 @@ body {
   .wrapper-medium a {
     font-weight: lighter;
     font-size: 14px;
-    opacity: 0.7;
     text-decoration: none; }
   .wrapper-medium a {
     color: #2C3A47; }
