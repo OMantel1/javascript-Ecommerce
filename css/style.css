@@ -91,9 +91,6 @@
 .product__infos-details {
   padding: 8px;
   color: #2C3A47; }
-  @media screen and (max-width: 425px) {
-    .product__infos-details {
-      text-align: center; } }
 
 /********* mise en page couleurs et quantités *********/
 .optionsBox {
@@ -102,10 +99,6 @@
   align-items: center;
   align-content: center;
   width: 150px; }
-  @media screen and (max-width: 425px) {
-    .optionsBox {
-      margin: auto;
-      justify-content: center; } }
 
 .productName {
   color: #2C3A47;

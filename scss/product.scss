@@ -78,10 +78,6 @@
     &__infos-details {
         padding: 8px;
         color: $main-color;
-
-        @media screen and (max-width: 425px) {
-            text-align: center;
-        }
     }
 }
 
@@ -93,10 +89,7 @@
     align-content: center;
     width: 150px;
 
-    @media screen and (max-width: 425px) {
-        margin: auto;
-        justify-content: center;
-    }
+
 }
 
 .productName {
