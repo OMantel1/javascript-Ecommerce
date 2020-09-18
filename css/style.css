@@ -43,9 +43,6 @@
 
 /********* Produc box *********/
 .product__list {
-  width: 250px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  margin: 8px;
   background: white; }
   .product__list > a {
     text-decoration: none; }
@@ -57,11 +54,11 @@
   padding: 16px;
   background: white; }
 .product__image-small {
-  margin: auto;
-  padding: 16px; }
+  padding: 16px;
+  text-align: center; }
   .product__image-small > img {
-    width: 100%;
-    height: 150px; }
+    width: 168px;
+    height: 120px; }
 .product__image-big {
   min-width: 210px;
   max-width: 60%;
@@ -72,9 +69,15 @@
     height: auto; }
 
 .items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  background-color: #e6e6e6;
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2px; }
+  @media screen and (max-width: 425px) {
+    .items {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
 
 /********* mise en page descriptions produits "infos" *********/
 .product__infos {
@@ -120,7 +123,9 @@
 .addSubButtons button {
   width: 24px; }
 
-.addSubButtons, .productPrice, .productOptions {
+.addSubButtons,
+.productPrice,
+.productOptions {
   margin: 4px 0; }
 
 /*********** Panier résumé***********/
@@ -258,7 +263,7 @@ body {
   min-height: 100vh;
   margin: auto;
   font-family: nunito, sans-serif;
-  background-color: rgba(202, 211, 200, 0.144); }
+  background-color: #eeeeee; }
 
 /********* container *********/
 .container {
