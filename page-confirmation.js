@@ -30,10 +30,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     addMessage();
 
-    //remise à zero du local storage
-    function resetLocalStorage() {
-        localStorage.removeItem("panier");
-        localStorage.removeItem("IdClicked");
-    }
     resetLocalStorage();
 });
+
+ //remise à zero du local storage
+ function resetLocalStorage() {
+    localStorage.removeItem("panier");
+    localStorage.removeItem("IdClicked");
+}
+
+module.exports = resetLocalStorage;
