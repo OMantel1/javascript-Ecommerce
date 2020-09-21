@@ -4,7 +4,8 @@
   "description": "- School project -",
   "main": "main.js",
   "scripts": {
-    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+    "sass": "sass --watch ./scss/style.scss:./css/style.css",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/OMantel1/front-oriteddies/issues"
   },
-  "homepage": "https://github.com/OMantel1/front-oriteddies#readme"
+  "homepage": "https://github.com/OMantel1/front-oriteddies#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
 }
