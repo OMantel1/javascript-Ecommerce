@@ -5,14 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let basket = JSON.parse(localStorage.getItem("panier"));
     let commandMessage = document.getElementById("validate");
 
-    //calcul du prix total de la commande
-    function totalPrice(basket) {
-        let total = 0;
-        basket.forEach(product => {
-            total += product.quantity * product.price / 100;
-        });
-        return total;
-    }
+
     let price = totalPrice(basket);
 
     //Ajout du message de bonne reception de la commande
@@ -33,10 +26,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
     resetLocalStorage();
 });
 
- //remise à zero du local storage
- function resetLocalStorage() {
+
+// calcul du prix total de la commande
+function totalPrice(arr) {
+    let total = 0;
+    arr.forEach(product => {
+        total += product.quantity * product.price / 100;
+    });
+    return total;
+}
+
+// remise à zero du local storage
+function resetLocalStorage() {
     localStorage.removeItem("panier");
     localStorage.removeItem("IdClicked");
 }
 
-module.exports = resetLocalStorage;
+
+export {totalPrice, resetLocalStorage};
+
