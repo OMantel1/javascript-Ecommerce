@@ -1,7 +1,6 @@
 /*********** Panier résumé***********/
 
 .resume {
-    @include boxShadow;
     margin: 8px;
     padding: 16px;
     @include textLight;

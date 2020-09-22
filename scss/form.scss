@@ -1,14 +1,15 @@
 /********* Formulaire *********/
 .form {
-    width: 50%;
+    width: 80%;
     margin: auto;
     padding: 8px;
     display: flex;
     flex-direction: column;
     // background-color: $background;
-    @include boxShadow;
-
-    @include textLight;
+    border: solid 1px rgb(221, 221, 221);
+    @media screen and (min-width: 425px) {
+        width: 300px;
+    }
 
     div {
         width: 90%;
@@ -16,7 +17,7 @@
         padding: 8px;
         display: flex;
         flex-direction: column;
-        
+
 
 
         input,
@@ -24,26 +25,32 @@
             width: 100%;
             background-color: white;
             border-radius: 4px;
-            
+            border: solid 1px rgb(202, 202, 202);
+
+
         }
     }
-    >input{
-        width: 40%;
+
+    >input {
+        width: 55%;
         margin: auto;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 }
 
-.displayValidation::after{
+.displayValidation::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content:"\f00c";
+    content: "\f00c";
     color: green;
 
 }
-.displayNoValidation::after{
+
+.displayNoValidation::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content:"\f00c";
+    content: "\f00c";
     color: red;
 
 }
