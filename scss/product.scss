@@ -17,10 +17,12 @@
     }
 
     &__single {
-        @include boxShadow;
         margin: 8px;
         padding: 16px;
         background: $second-color;
+        @media screen and (min-width: 600px) {
+            display: flex;
+        }
 
 
     }

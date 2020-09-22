@@ -48,7 +48,7 @@ body {
     }
 
     &-medium {
-        width: 50%;
+        width: 60%;
         margin: auto;
 
         @media screen and (max-width: 1024px) {
@@ -74,10 +74,10 @@ body {
             padding: 10px;
             background-color: $background;
             color: $main-color;
-            border: solid lighten($main-color, 30%) 1px;
+            border: solid lighten($main-color, 65%) 1px;
             &:hover {
                 color: $background;
-                background-color: $main-color;
+                background-color: lighten($main-color, 20%);
                 border: solid lighten($main-color, 30%) 1px;
             }
         }
