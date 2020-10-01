@@ -2,24 +2,20 @@
 .product {
 
     &__list {
-        // @include boxShadow;
-        background: $second-color;
-
+        background-color: white;
         >a {
             text-decoration: none;
         }
 
         &:hover {
-            box-shadow: 0px 0px 2px black;
+            box-shadow: 0px 0px 2px $main-color;
 
         }
 
     }
 
     &__single {
-        margin: 8px;
-        padding: 16px;
-        background: $second-color;
+        margin: 32px;
         @media screen and (min-width: 600px) {
             display: flex;
         }
@@ -42,23 +38,24 @@
         min-width: 210px;
         max-width: 60%;
         margin: auto;
-        padding: 8px;
+        padding: 0;
 
         >img {
             width: 100%;
             height: auto;
+            
         }
     }
 }
 
 .items {
-    // border: solid red 1px;
-    background-color:darken($third-color, 3%);
+    background-color: darken($third-color, 3%);
     width: 80vw;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2px;
+    grid-gap: 4px;
+
     @media screen and (max-width: 425px) {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
@@ -69,7 +66,7 @@
 .product {
     &__infos {
         display: flex;
-        justify-content: flex-start;
+        // justify-content: center;
         flex-direction: column;
         align-items: flex-end;
         flex-wrap: wrap;
@@ -97,7 +94,7 @@
 .productName {
     color: $main-color;
     letter-spacing: 0.1em;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 900;
 
 }
@@ -110,6 +107,10 @@
 
 }
 
+.productDescription {
+    padding-bottom: 16px;
+}
+
 
 .addSubButtons button {
     width: 24px;
@@ -119,5 +120,22 @@
 .addSubButtons,
 .productPrice,
 .productOptions {
-    margin: 4px 0;
+    margin: 2px 0;
+}
+
+.button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $background;
+    color: white;
+    border: solid 1px $background;
+    font-weight: bold;
+    font-size: 12px;
+
+    &:hover {
+        color: $background;
+        background-color: white;
+        @include border-light
+    }
 }

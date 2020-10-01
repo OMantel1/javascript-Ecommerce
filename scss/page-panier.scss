@@ -1,15 +1,22 @@
 /*********** Panier résumé***********/
 
+
+.basket-box {
+
+    @media (min-width: 694px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.basket {
+    padding: 16px;
+}
+
 .resume {
     margin: 8px;
-    padding: 16px;
     @include textLight;
-    background: $second-color;
     display: flex;
-
-    p {
-        margin: auto;
-    }
 
     .fas {
         padding-left: 16px;
@@ -33,7 +40,6 @@
     .list-name {
         width: 33%;
         text-align: start;
-
 
         a {
             font-size: 13px;
@@ -67,6 +73,7 @@
     justify-content: space-between;
     padding: 0px 10px;
     @include textLight;
+    border-top: solid $second-color 1px;
 
     p:first-child {
         text-decoration: underline;
@@ -78,6 +85,6 @@
     }
 }
 
-.displayNone{
+.displayNone {
     display: none;
 }

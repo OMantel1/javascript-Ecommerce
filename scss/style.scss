@@ -8,6 +8,9 @@
 @import "footer.scss";
 
 /********* General *********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,900;1,200&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +19,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: auto;
-    font-family: nunito, sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: $third-color;
 }
 
@@ -24,67 +27,57 @@ body {
 .container {
     flex: 1;
     height: 100%;
-
     &__title {
+        font-family: 'Poppins', sans-serif;
         color: $main-color;
-        opacity: 0.9;
-        font-size: 26px;
-        font-weight: 900;
-        letter-spacing: 2px;
+        font-size: 32px;
+        font-weight: lighter;
         text-align: center;
-        padding: 16px;
+        margin-top: 0;
+        margin-bottom: 64px;
+    }
+
+    .continue {
+        color: $main-color;
+        font-size: 14px;
     }
 }
 
 /********* wrapper large and medium *********/
 
 .wrapper {
-    &-large {
-        width: 70%;
+    &-small {
+        width: 95%;
+        max-width: 500px;
         margin: auto;
-        @media screen and (max-width: 850px) {
-            width: 98%;
-        }
+        @include border-light
     }
 
-    &-medium {
-        width: 60%;
+    &-large {
+        width: 98%;
+        max-width: 900px;
         margin: auto;
-
-        @media screen and (max-width: 1024px) {
-            width: 90%;
-        }
 
         p,
         a {
             @include textLight;
-            text-decoration: none;
         }
 
         a {
             color: $main-color;
-
             &:hover {
-                color: darken($main-color, 70%);
+                color: darken($main-color, 90%);
             }
-        }
-
-        .button {
-            width: 150px;
-            padding: 10px;
-            background-color: $background;
-            color: $main-color;
-            border: solid lighten($main-color, 65%) 1px;
-            &:hover {
-                color: $background;
-                background-color: lighten($main-color, 20%);
-                border: solid lighten($main-color, 30%) 1px;
-            }
-        }
-
-        >div {
-            text-align: center;
         }
     }
+}
 
+.wrapper-large > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    a {
+        padding-bottom: 16px;
+    }
 }

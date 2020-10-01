@@ -1,7 +1,7 @@
 /******** validation commande *******/
 #validate {
     @include textLight;
-    @include boxShadow;
+    @include border-light;
     width: 70%;
     margin: auto;
     padding: 16px;

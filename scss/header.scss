@@ -1,16 +1,17 @@
 /********* header *********/
 .header {
-    background-color: $second-color;
+    background-color: $third-color;
     color: $main-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 8px;
-    box-shadow: 0px 0px 1px $main-color;
 
     &__title {
+        font-family: 'Poppins', sans-serif;
         display: flex;
         align-items: center;
+
         >a{
             text-decoration: none;
             color: $main-color;
@@ -19,17 +20,17 @@
     }
 
     .image {
-        width: 32px;
-        padding: 8px;
+        width: 42px;
+        padding: 16px 0 8px  16px;
     }
 
     img {
         width: 100%;
-        color: $main-color;
+        // color: $main-color;
     }
 
     .text {
-        font-size: 18px;
+        font-size: 20px;
         letter-spacing: 4px;
         margin: 0;
         padding: 8px;
@@ -41,13 +42,12 @@
     .fas {
         color: $main-color;
         font-size: 26px;
-        // margin: 0px 0px 0px 24px;
         position: relative;
     }
 
     #display {
         position: absolute;
-        top: 16px;
+        top: 26px;
         right: 5px;
         width: 30px;
         text-align: center;
