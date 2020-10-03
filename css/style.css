@@ -42,6 +42,29 @@
   font-weight: bolder;
   color: white; }
 
+.loader {
+  border: solid 2px #d6c7e4;
+  border-right-color: #5b59ce;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  animation: loader-rotate 800ms ease-in infinite;
+  margin: auto;
+  text-align: center;
+  margin-top: 25vh; }
+
+.hidden {
+  display: none; }
+
+@keyframes loader-rotate {
+  from {
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 0px grey; }
+  75% {
+    box-shadow: 0px 0px 5px grey; }
+  to {
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 0px grey; } }
 /********* Produc box *********/
 .product__list {
   background-color: white; }

@@ -30,8 +30,16 @@ fetchPromise
                     </a>
                 </section>`;
         });
+        loaderHide()
         itemsElements.innerHTML = elements;
     })
     .catch((error) => {
         console.error(error);
+        loaderHide()
+        itemsElements.innerHTML = error;
     });
+
+function loaderHide() {
+    let loader = document.querySelector(".loader");
+    loader.classList.add("hidden");
+}
