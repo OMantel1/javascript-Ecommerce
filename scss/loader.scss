@@ -2,12 +2,14 @@
     border: solid 2px rgb(214, 199, 228);
     border-right-color: $background;
     border-radius: 50px;
+    background-color: white;
     width: 80px;
     height: 80px;
-    animation: loader-rotate 800ms ease-in infinite;
     margin: auto;
     text-align: center;
     margin-top: 25vh;
+    animation: loader-rotate 800ms ease-in infinite;
+
 }
 .hidden {
     display: none;
