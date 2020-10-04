@@ -1,7 +1,62 @@
 @charset "UTF-8";
-/********* header *********/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,900;1,200&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+  background-color: white; }
+
+/********* container *********/
+.container {
+  flex: 1;
+  height: 100%;
+  background-color: white; }
+  .container__title {
+    font-family: 'Poppins', sans-serif;
+    color: #2C3A47;
+    font-size: 32px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 64px; }
+  .container .continue {
+    color: #2C3A47;
+    font-size: 14px; }
+
+/********* wrapper large and medium *********/
+.wrapper-small {
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  border: solid 1px #dddddd;
+  border-radius: 4px; }
+.wrapper-large {
+  width: 98%;
+  max-width: 900px;
+  margin: auto; }
+  .wrapper-large p,
+  .wrapper-large a {
+    font-weight: lighter;
+    font-size: 14px; }
+  .wrapper-large a {
+    color: #2C3A47; }
+    .wrapper-large a:hover {
+      color: black; }
+
+.wrapper-large > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .wrapper-large > div a {
+    padding-bottom: 16px; }
+
+/********* header *********/
 .header {
   background-color: white;
   color: #2C3A47;
@@ -42,6 +97,7 @@
   font-weight: bolder;
   color: white; }
 
+/********* loader *********/
 .loader {
   border: solid 2px #d6c7e4;
   border-right-color: #5b59ce;
@@ -164,7 +220,7 @@
     border: solid 1px #dddddd;
     border-radius: 4px; }
 
-/*********** Panier résumé***********/
+/*********** Basket Page ***********/
 @media (min-width: 694px) {
   .basket-box {
     display: grid;
@@ -226,7 +282,7 @@
 .displayNone {
   display: none; }
 
-/********* Formulaire *********/
+/********* Form *********/
 .form {
   width: 92%;
   max-width: 300px;
@@ -275,7 +331,7 @@
   content: "\f00c";
   color: red; }
 
-/******** validation commande *******/
+/******** Confirmation Page *******/
 #validate {
   font-weight: lighter;
   font-size: 14px;
@@ -305,61 +361,5 @@
   @media screen and (max-width: 424px) {
     .fab {
       margin: 10px; } }
-
-/********* General *********/
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: auto;
-  font-family: 'Nunito', sans-serif;
-  background-color: white; }
-
-/********* container *********/
-.container {
-  flex: 1;
-  height: 100%;
-  background-color: white; }
-  .container__title {
-    font-family: 'Poppins', sans-serif;
-    color: #2C3A47;
-    font-size: 32px;
-    font-weight: lighter;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 64px; }
-  .container .continue {
-    color: #2C3A47;
-    font-size: 14px; }
-
-/********* wrapper large and medium *********/
-.wrapper-small {
-  width: 95%;
-  max-width: 500px;
-  margin: auto;
-  border: solid 1px #dddddd;
-  border-radius: 4px; }
-.wrapper-large {
-  width: 98%;
-  max-width: 900px;
-  margin: auto; }
-  .wrapper-large p,
-  .wrapper-large a {
-    font-weight: lighter;
-    font-size: 14px; }
-  .wrapper-large a {
-    color: #2C3A47; }
-    .wrapper-large a:hover {
-      color: black; }
-
-.wrapper-large > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center; }
-  .wrapper-large > div a {
-    padding-bottom: 16px; }
 
 /*# sourceMappingURL=style.css.map */

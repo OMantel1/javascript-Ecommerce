@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="icon" href="img/bear-face.png" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/page-product.js"></script>
+    <script src="js/basketIconDisplay.js"></script>
+
+    <title>ORITEDDIES | Selection</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__title">
+            <div class="image">
+                <img src="img/bear-face.png" alt="">
+            </div>
+            <a href="index.html">
+                <h1 class="text">Oriteddies</h1>
+            </a>
+        </div>
+
+        <div class="shopping">
+            <a href="page-basket.html"><i class="fas fa-shopping-cart"></i>
+                <div id="display">
+                    <!-- <span class="displayNumber">8</span> -->
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main container -->
+    <main class="container">
+        <h2 class="container__title">Votre selection</h2>
+        <!-- <a href="index.html">Retour à la liste des produits</a> -->
+        <!-- section container product -->
+        <div class="wrapper-large">
+
+            <!-- section product -->
+            <section class="product__single">
+
+                <!-- <div class="product__image-big">
+                    <img src="${object.imageUrl}" alt="">
+                </div>
+                <div class="product__infos-details">
+                    <div class="productName">${object.name}</div>
+                    <div class="productDescription">${object.description}</div>
+                    <form class="productOptions optionsBox">
+                        <label for="option">Couleur</label>
+                        <select name="option" id="options">
+                            // <option value="" selected>black</option>
+                            // <option value="" selected>red</option>
+                            // <option value="" selected>blue</option>
+                            // <option value="" selected>green</option>
+                        </select>
+                    </form>
+
+                    <div class="optionsBox">
+                        <div class="productQuantity">
+                            Quantité: <span id="quantity">1</span>
+                        </div>
+                        <div class="addSubButtons">
+                            <button>-</button> <button>+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="productPrice">
+                        Prix: ${(object.price / 100)} €
+                    </div>
+                </div> -->
+
+            </section>
+
+            <div>
+                <a href="page-basket.html"><button class="button">Ajouter au panier</button></a>
+                <a href="index.html">Retour liste</a>
+            </div>
+
+
+
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer_text">
+            <p> <strong>Oriteddies</strong>
+                by Orinoco</p>
+        </div>
+
+        <!-- footer social icons -->
+        <section class="footer__social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -4,7 +4,7 @@
   "description": "- School project -",
   "main": "main.js",
   "scripts": {
-    "sass": "sass --watch ./scss/style.scss:./css/style.css",
+    "sass": "sass --watch ./scss/main.scss:./css/style.css",
     "test": "jest"
   },
   "jest": {
